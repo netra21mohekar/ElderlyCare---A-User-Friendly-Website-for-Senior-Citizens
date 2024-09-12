@@ -1,0 +1,76 @@
+*{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.youtube1 {
+    position: relative; /* Set the container as a positioning context */
+}
+
+/* Style for the background image */
+.youtube1 .oldimage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Style for the h1 text */
+.youtube1 h1 {
+    position: absolute;
+    top: 50%; /* Position the text vertically in the middle of the container */
+    left: 50%; /* Position the text horizontally in the middle of the container */
+    transform: translate(-50%, -50%); /* Center the text precisely */
+    color: white; /* Text color on top of the background image */
+    font-size: 36px;
+    text-align: center;
+    max-width: 80%; /* Limit the width of the text */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background color for better readability */
+    padding: 20px; /* Add some padding for better readability */
+    border-radius: 10px; /* Add rounded corners to the background */
+}
+
+/* Style the game container */
+.games-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    gap: 20px; /* Add spacing between games */
+    padding: 20px; /* Add padding to center games */
+    justify-content: center; /* Center games horizontally */
+    align-items: center; /* Center games vertically */
+}
+
+/* Style each game box */
+.game {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width to fit three games with spacing */
+    min-width: 200px; /* Set a minimum width for each game */
+}
+
+/* Style the game image */
+.game img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+/* Style the game title, description, and play button as needed */
+.game a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.game-description {
+    font-size: 14px;
+    color: #777;
+}
+

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="footer.css" />
+    <style>
+
+.youtube1 {
+    position: relative;
+    text-align: center;
+  }
+  
+  .youtube1 h1 {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff; /* Change text color to black */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text */
+  padding: 10px 20px; /* Add padding to create the box */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+
+/* Container for the content */
+.box {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+/* Style for the text */
+.box p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Add a subtle border around the box */
+.box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+/* Heading style */
+.box h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .box {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+/* Add more space after each paragraph */
+.box p {
+  margin-bottom: 20px;
+}
+/* Add more space after each paragraph */
+.box p {
+  margin-bottom: 10px;
+}
+
+/* Style for the image inside the box */
+.box-image {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add margin to separate image from text */
+  max-width: 40%; /* Set a maximum width for the image */
+  max-height: 40%px; /* Set a maximum height for the image */
+}
+.box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box .box-image2 {
+    max-width: 100%; /* Adjust the image size */
+    float: right; /* Position the image on the right */
+    margin-left: 20px; /* Add some margin for spacing */
+    
+}
+.box-image {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add margin to separate image from text */
+  max-width: 40%; /* Set a maximum width for the image */
+  max-height: 40%px; /* Set a maximum height for the image */
+}
+.box .box-image2 {
+    max-width: 40%; /* Adjust the image size */
+    float: right; /* Position the image on the right */
+    margin-left: 20px; /* Add some margin for spacing */
+    
+}
+.box-image {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add margin to separate image from text */
+  max-width: 40%; /* Set a maximum width for the image */
+  max-height: 40%px; /* Set a maximum height for the image */
+}
+.highlight {
+  color: red; /* or any other color */
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="header1">
+      <nav class="sticky">
+        <a href="" id="logo"><h2>JoyfulAging</h2></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-window-close" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="">Population Status Of Older Adults</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Health ▼</a>
+              <div class="dropdown-content">
+                <a href="diet.html">Diet</a>
+                <a href="exercise.html">Exercise</a>
+                <a href="mentalhealth.html">Mental Health</a>
+              </div>
+            </li>
+
+            <li><a href="">Law And Senior Citizen</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Schemes ▼</a>
+              <div class="dropdown-content">
+                <a href="nationlpolicy.html">National Policy of Elder Person</a>
+                <a href="nationalassistance.html">National Social Assistant Programme</a>
+                <a href="">Rebates</a>
+                <a href="">NGO's and Voluntury Organizations</a>
+              </div>
+            <li><a href="">Healthy Ageing</a></li>
+            <li><a href="oldAgeVideos.html">Old Age Videos</a></li>
+            <div id="button">
+              <li><a href="loginPage.php">Login</a></li>
+            </div>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </div>
+
+    <section class="youtube1">
+      <h1>Diet For Good Health</h1>
+      <img src="diet.png" alt="" class="oldimage" />
+    </section>
+
+    <div class="box">
+      <img src="diet1.png" alt="Image" class="box-image" />
+      <div class="box-text">
+        <h1>Food Pyramid</h1>
+        
+        <h4>Grains and Cereals (Base of the Pyramid)</h4>
+        <p>
+          This forms the base of the pyramid and includes foods like bread,
+          rice, pasta, and cereal. These foods are high in carbohydrates and
+          provide energy. The largest portion of your daily diet should come
+          from this group.
+        </p>
+        <h4>Vegetables:</h4>
+        <p>
+          The next layer includes vegetables like leafy greens, carrots,
+          broccoli, and peppers. Vegetables are rich in vitamins, minerals, and
+          fiber and are vital for overall health. Aim to include a variety of
+          colorful vegetables in your daily meals.
+        </p>
+        <h4>Fruits:</h4>
+        <p>
+          Fruits, like apples, bananas, berries, and citrus fruits, are also
+          rich in vitamins, minerals, fiber, and natural sugars. They should be
+          a significant part of your daily diet.
+        </p>
+        <h4>Dairy Products:</h4>
+        <p>
+          This group includes milk, cheese, yogurt, and other dairy items. They
+          are important sources of calcium, protein, and other nutrients
+          essential for bone health and development.
+        </p>
+        <h4>Protein:</h4>
+        <p>
+          This group includes meat, poultry, fish, eggs, beans, nuts, and
+          seeds. Proteins are essential for growth, repair, and maintenance of
+          body tissues.
+        </p>
+        <h4>Fats, Oils, and Sweets (Top of the Pyramid):</h4>
+        <p>
+          Fats, oils, and sweets should be consumed sparingly as they are high
+          in calories and low in nutrients. These include butter, oils,
+          candies, and sugary beverages.
+        </p>
+        <p>
+          The concept of the food pyramid encourages a balanced diet with an
+          emphasis on whole grains, fruits, and vegetables while limiting the
+          intake of sugars and fats. However, it's important to note that
+          individual dietary needs may vary based on factors like age, gender,
+          activity level, and overall health.
+        </p>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="diet2.png" alt="Image" class="box-image2" />
+      <div class="box-text">
+        <h1>Diet for Older Adults</h1>
+        
+        <h4>Adequate Protein:</h4>
+        <p>Older adults need sufficient protein to maintain muscle mass, strength, and overall health. Include sources of protein such as lean meats, poultry, fish, eggs, dairy products, legumes, and nuts in their diet.</p>
+
+        <h4>Calcium and Vitamin D:</h4>
+        <p>Calcium and vitamin D are essential for bone health, especially as bone density tends to decrease with age. Include dairy products, fortified foods, leafy greens, and supplements if necessary.</p>
+
+        <h4>Fiber-Rich Foods:</h4>
+        <p>A diet rich in fiber can aid in digestion, prevent constipation, and support heart health. Encourage consumption of whole grains, fruits, vegetables, legumes, and nuts.</p>
+
+        <h4>Healthy Fats:</h4>
+        <p>Opt for sources of healthy fats like avocados, nuts, seeds, and olive oil. These fats are crucial for heart health and brain function.</p>
+
+        <h4>Hydration:</h4>
+        <p>Older adults are prone to dehydration, so encourage them to drink adequate water throughout the day. Limit caffeine and alcohol, as they can lead to dehydration.</p>
+
+        <h4>Variety of Fruits and Vegetables:</h4>
+        <p>Encourage a colorful array of fruits and vegetables to ensure a diverse intake of vitamins, minerals, and antioxidants. These support immune function and overall health.</p>
+
+        <h4>Moderate Sodium Intake:</h4>
+        <p>Limit sodium intake to help manage blood pressure and reduce the risk of heart-related issues. Encourage the use of herbs and spices for flavor instead of salt.</p>
+
+        <h4>Smaller, More Frequent Meals:</h4>
+        <p>As appetite may decrease with age, suggest smaller, nutrient-dense meals throughout the day to ensure adequate nutrition.</p>
+
+        <h4>Addressing Nutrient Deficiencies:</h4>
+        <p>Older adults may have deficiencies in certain vitamins (e.g., B12, vitamin D) and minerals (e.g., calcium, iron). Consider supplements if necessary and as recommended by healthcare professionals.</p>
+
+        <h4>Consult a Registered Dietitian:</h4>
+        <p>Every individual is unique, so consider consulting a registered dietitian to tailor a diet plan based on specific health conditions, medications, and individual needs.</p>
+
+        <h4>Mindful Eating:</h4>
+        <p>Encourage mindful eating, where they eat slowly, savor each bite, and pay attention to hunger and fullness cues.</p>
+
+        <h4>Accommodate Special Diets:</h4>
+        <p>Consider dietary restrictions or health conditions (e.g., diabetes, heart disease) and tailor the diet accordingly.</p>
+
+        <p>It's essential to involve healthcare professionals, such as dietitians and doctors, to create a personalized dietary plan that meets the specific needs and health status of each older adult.</p>
+    </div>
+    </div>
+    <div class="box">
+      <img src="diet3.png" alt="Image" class="box-image" />
+      <div class="box-text">
+        <h1>Designing a suitable diet for older adults</h1>
+  
+        <p>Designing a suitable diet for older adults is important for maintaining <span class="highlight">good health</span>, managing <span class="highlight">chronic conditions</span>, and enhancing overall <span class="highlight">well-being</span>. As individuals age, their <span class="highlight">nutritional needs change</span>, and it's crucial to adapt the diet to these changing requirements. Here are some key considerations for creating a diet tailored to older adults:</p>
+  
+        <h4>Breakfast:</h4>
+        <p><span class="highlight">Whole Grain Cereal:</span> Provide a bowl of whole-grain cereal with low-fat milk or a milk substitute fortified with vitamin D and calcium.<br>
+          <span class="highlight">Fruits:</span> Include a serving of fruits like berries, bananas, or oranges for added vitamins and fiber.<br>
+          <span class="highlight">Nuts or Seeds:</span> Add a sprinkle of nuts or seeds for healthy fats and protein.</p>
+  
+        <h4>Snack:</h4>
+        <p><span class="highlight">Greek Yogurt:</span> Offer a small portion of Greek yogurt, which is high in protein and calcium.<br>
+          <span class="highlight">Fruit:</span> Include a piece of fruit like an apple or a pear.</p>
+  
+        <h4>Lunch:</h4>
+        <p><span class="highlight">Lean Protein:</span> Incorporate lean protein sources like grilled chicken, turkey, or legumes (beans and lentils).<br>
+          <span class="highlight">Vegetables:</span> Serve a variety of colorful vegetables for essential vitamins and minerals.<br>
+          <span class="highlight">Whole Grains:</span> Include whole grains like brown rice, whole grain bread, or quinoa for fiber and energy.</p>
+  
+        <h4>Snack:</h4>
+        <p><span class="highlight">Cheese and Crackers:</span> Provide a small portion of low-fat cheese with whole-grain crackers for protein and calcium.<br>
+          <span class="highlight">Vegetable Sticks with Hummus:</span> Offer a mix of colorful vegetable sticks with hummus for a nutritious snack.</p>
+  
+        <h4>Dinner:</h4>
+        <p><span class="highlight">Fish:</span> Include fatty fish like salmon or mackerel for omega-3 fatty acids that support heart health.<br>
+          <span class="highlight">Steamed Vegetables:</span> Serve steamed or lightly cooked vegetables to retain their nutrients.<br>
+          <span class="highlight">Sweet Potatoes:</span> Offer sweet potatoes as a source of vitamins and fiber.<br>
+          <span class="highlight">Salad:</span> Include a side salad with a variety of greens and a light dressing.</p><br>
+  
+        <h4>General Tips:</h4>
+        <p>Encourage drinking plenty of water throughout the day to stay hydrated.
+          Monitor and control salt intake to maintain healthy blood pressure levels.
+          Provide smaller, more frequent meals to accommodate decreased appetite and digestion.
+          Ensure adequate intake of calcium and vitamin D for bone health.
+          Consult a registered dietitian for personalized dietary recommendations based on health conditions and individual needs.</p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3 class="heading">Main Menu</h3>
+          <ul class="footer-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us </a></li>
+              <li><a href="">Population Status Of Older Adults</a></li>
+              <li>
+                  <a href="">Health</a>
+              </li>
+              <li><a href="lawsandsenior.html">Law And Senior Citizen</a></li>
+              
+              <li><a href="">Schemes</a></li>
+              <li><a href="">Healthy Ageing</a></li>
+              <li><a href="">Old Age Videos</a></li>
+
+            <!-- Add more main menu links as needed -->
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="heading">Quick Links</h3>
+          <ul class="footer-nav">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+            <!-- Add more quick links as needed -->
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="heading">Useful Links</h3>
+          <ul class="footer-nav">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <!-- Add more useful links as needed -->
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

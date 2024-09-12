@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <!-- Your page content here -->
+    </div>
+  </body>
+
+    <div class="header">
+      <nav class="sticky">
+        <a href="" id="logo"><h2>JoyfulAging</h2></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-window-close" onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="">Population Status Of Older Adults</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Health ▼</a>
+                <div class="dropdown-content">
+                  <a href="diet.html">Diet</a>
+                  <a href="#">Exercise</a>
+                  <a href="#">Mental Health</a>
+                </div>
+              </li>
+              
+            <li><a href="lawsandsenior.html">Law And Senior Citizen</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Schemes ▼</a>
+              <div class="dropdown-content">
+                <a href="nationlpolicy.html">National Policy of Elder Person</a>
+                <a href="nationalassistance.html">National Social Assistant Programme</a>
+                <a href="rebates.html">Rebates</a>
+                <a href="">NGO's and Voluntury Organizations</a>
+              </div>
+
+            <li><a href="">Healthy Ageing</a></li>
+            <li><a href="oldAgeVideos.html">Old Age Videos</a></li>
+            <div id="button">
+            <li><a href="demo.html">Login</a></li>
+        </div>
+            
+          </ul>
+        </div>
+        <i class="fas fa-bar s" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+       <!-- Example usage of the "animate" class -->
+<h1 class="animate">Embrace the Golden Years:<br> A Hub for Senior Enrichment</h1>
+<h4 class="animate">
+  Discover the beauty of aging gracefully with games, music, blogs, and more. Join us in celebrating lifelong learning and camaraderie
+</h4>
+
+
+        <button class="buttn">
+          <a href="" class="hero-btn">Visit Us To Know More</a>
+        </button>
+      </div>
+    </div>
+    
+    <section class="slider-frame">
+      <!-- Add these buttons inside your slide-images div -->
+      <div class="prev-btn" onclick="slidePrev()">&#10094;</div>
+      <div class="next-btn" onclick="slideNext()">&#10095;</div>
+    
+      <!-- Modify image containers to adjust image size and wrap in anchor tags -->
+      <div class="img-container visible">
+        <a href="movies.html">
+          <img src="image1.jpg" alt="Image 1" class="image">
+        </a>
+      </div>
+      <div class="img-container">
+        <a href="new.html">
+          <img src="image2.jpg" alt="Image 2" class="image">
+        </a>
+      </div>
+      <div class="img-container">
+        <a href="image3_link.html">
+          <img src="image3.jpg" alt="Image 3" class="image">
+        </a>
+      </div>
+    </section>
+  
+
+    <!-- The "features" section starts here -->
+    <section class="features">
+      <h1 class="heading">Features We Offer</h1>
+      <p class="heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="row">
+        <a href="https://www.docgenie.in/" class="features-col">
+          <h3>Appointment</h3>
+          <img src="appointment.jpg" alt="Appointment Image">
+          <h5>
+            "Seamlessly schedule your appointments with us and unlock a world of convenience.</h5><p> Our user-friendly booking platform ensures you can reserve your slots with ease, leaving you with more time to focus on what truly matters. Say goodbye to long waiting times and hello to a smoother, organized experience. Trust us to simplify your scheduling needs.
+          </p>
+        </a>
+        <a href="games.html" class="features-col">
+          <h3>Games</h3>
+          <img src="game.jpg" alt="Appointment Image">
+          <h5>
+            Unlock the Power of Play, Where Age is Just a Number.
+            Rediscover the joy of play, exercise your mind, and share laughter with loved ones.</h5><p> Try our Game Button today and embark on a journey of fun and mental vitality that celebrates the wisdom and experience of your senior years. 
+          </p>
+        </a>
+        <a href="music.html" class="features-col">
+          <h3>Music</h3>
+          <img src="music.jpg" alt="Appointment Image">
+          <h5>
+            Rediscover the joy of music with our curated selection of melodies.</h5><p> Dive into a harmonious world of tunes carefully chosen to uplift your spirits and soothe your soul. Whether you're looking for relaxation or rhythm, our music button is your gateway to a symphony of sounds that will transport you to another realm. Let the music play, and let your worries fade away.
+          </p>
+        </a>
+      </div>
+      
+    </section>
+    <section class="section2">
+      <h2>Articles</h2>
+      <div class="slider-container">
+        <div class="slider" id="slider">
+          <div class="card">
+            <a href="https://www.greatseniorliving.com/articles/anxiety-and-stress-support-for-seniors">
+              <img src="card1.png" alt="Image 1">
+              <div class="card-content">
+                <h4>Read about Anxiety and Stress Support for Seniors</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec vehicula ex.</p>
+              </div>
+            </a>
+          </div>
+    
+          <div class="card">
+            <a href="https://www.greatseniorliving.com/articles/games-for-seniors">
+              <img src="card2.png" alt="Image 2">
+              <div class="card-content">
+                <h4>Amazing Games for You!!!</h4>
+                <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+              </div>
+            </a>
+          </div>
+    
+          <div class="card">
+            <a href="https://www.greatseniorliving.com/living-options/independent-living">
+              <img src="card3.png" alt="Image 3">
+              <div class="card-content">
+                <h4>Learn How to Live Independently</h4>
+                <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="section3">
+          <div class="card">
+            <a href="https://www.greatseniorliving.com/articles/grocery-carts-for-seniors">
+              <img src="card4.png" alt="Image 3">
+              <div class="card-content">
+                <h4>Best Grocery Carts for you!</h4>
+                <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://www.greatseniorliving.com/health-wellness/memory-help">
+              <img src="card5.png" alt="Image 3">
+              <div class="card-content">
+                <h4>11 Proven Tips for Boosting Your Brain!</h4>
+                <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+              </div>
+            </a>
+          </div> <div class="card">
+            <a href="https://www.greatseniorliving.com/articles/spirituality">
+              <img src="card6.png" alt="Image 3">
+              <div class="card-content">
+                <h4>Spirituality and Aging</h4>
+                <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+    
+    
+    <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3 class="heading">Main Menu</h3>
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us </a></li>
+                <li><a href="">Population Status Of Older Adults</a></li>
+                <li>
+                    <a href="">Health</a>
+                </li>
+                  
+                
+                <li><a href="lawsandsenior.html">Law And Senior Citizen</a></li>
+                <li><a href="">Scheme</a></li>
+                <li><a href="">Healthy Ageing</a></li>
+                <li><a href="">Old Age Videos</a></li>
+                <li><a href="loginPage.html">Login</a></li>
+
+
+              <!-- Add more main menu links as needed -->
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="heading">Quick Links</h3>
+            <ul class="footer-nav">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Support</a></li>
+              <!-- Add more quick links as needed -->
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="heading">Useful Links</h3>
+            <ul class="footer-nav">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <!-- Add more useful links as needed -->
+            </ul>
+          </div>
+        </div>
+      </footer>
+    <script>
+   function showMenu() {
+    navLinks.style.right = "0";
+}
+
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+
+      let currentIndex = 0;
+const imgContainers = document.querySelectorAll('.img-container');
+const totalImages = imgContainers.length;
+const intervalDuration = 3000; // Adjust the interval duration in milliseconds (3 seconds in this example)
+
+function showImage(index) {
+    imgContainers.forEach((container, i) => {
+        container.classList.toggle('visible', i === index);
+    });
+}
+
+function slideNext() {
+    imgContainers[currentIndex].classList.remove('visible');
+    currentIndex = (currentIndex + 1) % totalImages;
+    imgContainers[currentIndex].classList.add('visible');
+}
+
+// Initial setup
+showImage(currentIndex);
+
+// Slide to the next image at specified intervals
+const slideInterval = setInterval(() => {
+    slideNext();
+}, intervalDuration);
+function slidePrev() {
+            imgContainers[currentIndex].classList.remove('visible');
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            imgContainers[currentIndex].classList.add('visible');
+        }
+
+        function slideNext() {
+            imgContainers[currentIndex].classList.remove('visible');
+            currentIndex = (currentIndex + 1) % totalImages;
+            imgContainers[currentIndex].classList.add('visible');
+        }
+    </script>
+  </body>
+</html>

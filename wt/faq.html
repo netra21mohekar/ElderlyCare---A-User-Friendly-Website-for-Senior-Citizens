@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ ACCORDION</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+       body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .questions-container {
+            max-width: 800px;
+            margin-top: 20px; /* Adjust the margin according to your needs */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .question {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .question button {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            color: #333;
+            font-weight: 200;
+            cursor: pointer;
+            background: none;
+        }
+
+        .question p {
+            font-size: 14px;
+            max-height: 0;
+            opacity: 0;
+            line-height: 1.5;
+            overflow: hidden;
+            transition: all 0.6s ease;
+            padding: 0 15px;
+        }
+
+        .d-arrow {
+            transition: transform 0.5s ease-in;
+            color: #333;
+        }
+
+        .question p.show {
+            max-height: 200px;
+            opacity: 1;
+        }
+
+        .question button .d-arrow.rotate {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <nav class="sticky">
+        <a href="" id="logo"><h2>JoyfulAging</h2></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-window-close" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="">Population Status Of Older Adults</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Health ▼</a>
+                <div class="dropdown-content">
+                  <a href="#">Diet</a>
+                  <a href="#">Exercise</a>
+                  <a href="#">Mental Health</a>
+                </div>
+              </li>
+              
+            <li><a href="lawsandsenior.html">Law And Senior Citizen</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Schemes ▼</a>
+              <div class="dropdown-content">
+                <a href="nationlpolicy.html">National Policy of Elder Person</a>
+                <a href="nationalassistance.html">National Social Assistant Programme</a>
+                <a href="rebates.html">Rebates</a>
+                <a href="">NGO's and Voluntury Organizations</a>
+              </div>
+
+            <li><a href="">Healthy Ageing</a></li>
+            <li><a href="oldAgeVideos.html">Old Age Videos</a></li>
+            <div id="button">
+            <li><a href="demo.html">Login</a></li>
+        </div>
+            
+          </ul>
+        </div>
+        <i class="fas fa-bar s" onclick="showMenu()"></i>
+      </nav>
+
+<section>
+    <h1 class="title">FAQ's</h1>
+
+    <div class="questions-container">
+        <div class="question">
+            <button>
+                <span> Person aged 64 years, is currently active, having asthma issues. What and how much exercise is needed by him to be physically active?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>We need to know the type of asthma, if it is seasonal asthma that is very mild form. Definitely exercise or emotional outburst will cause asthma, so he has to be careful. Otherwise, there is no contradiction to do exercise, but if you have acute asthma you better not go for harsh exercise, you can start with mild exercises like walking, then increase the time and speed of walking over time. Some amount of stretching exercise can be done, or consult a physical trainer or yoga trainer. You can also do yoga, which helps in breathing and respiration, like pranayam. Spiro ball can also be used for breathing exercises; procedure to use is available online. But in case of acute asthma it has to be avoided. </p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>The person haven’t exercised yet entire his life, but is a farmer and used to work in fields. He hasn’t exercise for many years, where should he start from?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>There is no age to start a new thing, it is good that you are a farmer and probably have done a lot of physical exercise in his lifetime and that has to be continued, just like feeding of our body and mind, we need to feed our muscles with physical activities and exercise. You need to start with walking and gradually increasing the speed and time of the walk. </p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>Does one need to consult a doctor before joining or start doing physical activity?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>If you are not having any kind of cardiac issues there is no problem in starting the basic routine of exercises, but start with the basic and slow exercises step wise. </p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>The patient is 73 years old, retired teacher. Is he too old for doing exercise?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>There is no age bar to do exercise; even a 100 year old person can exercise. But one must chew as much as he can digest so start with basic exercises, like walking. </p>
+        </div>
+
+        <div class="question">
+            <button>
+                <span>Is memory loss normal with ageing?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>No, memory loss is not a part of ageing. But processing speed of memory slows down and we might need to be reminded about things more often. Once registered, recalling is not a problem. Memory loss is not a normal ageing phenomenon. </p>
+        </div>
+        <div class="question">
+            <button>
+                <span>What are the benefits of regular exercise?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>Regular exercise has numerous benefits, including improved cardiovascular health, stronger muscles and bones, weight management, better mood and mental health, increased energy levels, improved sleep, and a reduced risk of chronic diseases like diabetes and heart disease.</p>
+        </div>
+        
+        <div class="question">
+            <button>
+                <span>How long should I exercise each day?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>The American Heart Association recommends at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity activity per week, spread throughout the week. This averages to about 30 minutes per day, five days a week.</p>
+        </div>
+        
+        <div class="question">
+            <button>
+                <span>Can I exercise if I have a medical condition?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>It's essential to consult your doctor before starting any new exercise program, especially if you have a medical condition or any concerns about your health. They can provide guidance on suitable exercises and precautions you should take.</p>
+        </div>
+        
+        <div class="question">
+            <button>
+                <span>What's the best time of day to exercise?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>The best time to exercise is when it fits into your schedule and when you feel most motivated. Some people prefer morning workouts to boost their energy for the day, while others may prefer evening workouts to de-stress after work. The key is to find a time that works best for you and allows for consistency.</p>
+        </div>
+        <div class="question">
+            <button>
+                <span>How can I improve my flexibility?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>To improve flexibility, consider incorporating stretching exercises into your routine. Include static stretches for major muscle groups, and dynamic stretches before your workout. Yoga and Pilates are also great options for enhancing flexibility and overall mobility.</p>
+        </div>
+        
+        <div class="question">
+            <button>
+                <span>What are some good exercises for strengthening the core?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>Effective core exercises include planks, bicycle crunches, Russian twists, leg raises, and mountain climbers. These exercises engage the muscles in your abdomen, lower back, and pelvis, helping to build a strong core and improve stability.</p>
+        </div>
+        
+        <div class="question">
+            <button>
+                <span>Is it necessary to warm up before exercising?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>Yes, warming up before exercise is crucial. A proper warm-up helps increase blood flow to your muscles, prepares your body for the workout, and reduces the risk of injury. Include light aerobic exercises and dynamic stretches in your warm-up routine.</p>
+        </div>
+        
+        <div class="question">
+            <button>
+                <span>How can I stay motivated to exercise regularly?</span>
+                <i class="fas fa-chevron-down d-arrow"></i>
+            </button>
+            <p>Staying motivated involves setting achievable goals, finding a workout routine you enjoy, varying your exercises, exercising with a friend, tracking your progress, and rewarding yourself for reaching milestones. Remember, consistency is key to maintaining motivation.</p>
+        </div>
+                
+        <!-- Additional questions and answers go here -->
+        <!-- ... -->
+    </div>
+</section>
+<section>
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3 class="heading">Main Menu</h3>
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us </a></li>
+            <li><a href="">Population Status Of Older Adults</a></li>
+            <li>
+                <a href="">Health</a>
+            </li>
+              
+            
+            <li><a href="lawsandsenior.html">Law And Senior Citizen</a></li>
+            <li><a href="">Scheme</a></li>
+            <li><a href="">Healthy Ageing</a></li>
+            <li><a href="">Old Age Videos</a></li>
+            <li><a href="loginPage.html">Login</a></li>
+
+
+          <!-- Add more main menu links as needed -->
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 class="heading">Quick Links</h3>
+        <ul class="footer-nav">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Support</a></li>
+          <!-- Add more quick links as needed -->
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3 class="heading">Useful Links</h3>
+        <ul class="footer-nav">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <!-- Add more useful links as needed -->
+        </ul>
+      </div>
+    </div>
+  </footer>
+<!-- external js -->
+<script>
+    const buttons = document.querySelectorAll('button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const faq = button.nextElementSibling;
+            const icon = button.children[1];
+
+            faq.classList.toggle('show');
+            icon.classList.toggle('rotate');
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <style>
+ .youtube1 img{
+    max-width: 100%;
+    height: auto;
+
+  }
+  /* Add this CSS for centering text on the photo */
+/* Update the CSS for centering text on the photo and adding a transparent white box */
+.youtube1 {
+    position: relative;
+    text-align: center;
+  }
+  
+  .youtube1 h1 {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff; /* Change text color to black */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text */
+  padding: 10px 20px; /* Add padding to create the box */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+
+/* Container for the content */
+.box {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+/* Style for the text */
+.box p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Add a subtle border around the box */
+.box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+/* Heading style */
+.box h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .box {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+/* Add more space after each paragraph */
+.box p {
+  margin-bottom: 20px;
+}
+/* Add more space after each paragraph */
+.box p {
+  margin-bottom: 10px;
+}
+
+/* Style for the image inside the box */
+.box-image {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add margin to separate image from text */
+  max-width: 40%; /* Set a maximum width for the image */
+  max-height: 40%px; /* Set a maximum height for the image */
+}
+.box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box .box-image2 {
+    max-width: 100%; /* Adjust the image size */
+    float: right; /* Position the image on the right */
+    margin-left: 20px; /* Add some margin for spacing */
+    
+}
+.box-image {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add margin to separate image from text */
+  max-width: 40%; /* Set a maximum width for the image */
+  max-height: 40%px; /* Set a maximum height for the image */
+}
+.box .box-image2 {
+    max-width: 40%; /* Adjust the image size */
+    float: right; /* Position the image on the right */
+    margin-left: 20px; /* Add some margin for spacing */
+    
+}
+.box-image {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add margin to separate image from text */
+  max-width: 40%; /* Set a maximum width for the image */
+  max-height: 40%px; /* Set a maximum height for the image */
+}
+  </style>
+  <body>
+    <div class="header1">
+      <nav class="sticky">
+        <a href="" id="logo"><h2>JoyfulAging</h2></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-window-close" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="">Population Status Of Older Adults</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Health ▼</a>
+              <div class="dropdown-content">
+                <a href="#">Diet</a>
+                <a href="#">Exercise</a>
+                <a href="#">Mental Health</a>
+              </div>
+            </li>
+
+            <li><a href="lawsandsenior.html">Law And Senior Citizen</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Schemes ▼</a>
+              <div class="dropdown-content">
+                <a href="nationlpolicy.html">National Policy of Elder Person</a>
+                <a href="nationalassistance.html">National Social Assistant Programme</a>
+                <a href="">Rebates</a>
+                <a href="">NGO's and Voluntury Organizations</a>
+              </div>
+            </li>
+
+            <li><a href="">Healthy Ageing</a></li>
+            <li><a href="oldAgeVideos.html">Old Age Videos</a></li>
+            <div id="button">
+              <li><a href="loginPage.php">Login</a></li>
+            </div>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </div>
+    <section class="youtube1">
+      <h1>National Policy of Elder Person</h1>
+      <img src="policy.png" alt="" class="oldimage" />
+    </section>
+    <div class="box">
+        <img src="national.png" alt="Image" class="box-image" />
+    <p>
+      The global trend of demographic aging has impacted India as well, with
+      people living longer lives. Life expectancy at birth has consistently
+      increased for both males and females over the years. The number of
+      individuals aged 60 and above has substantially risen, and projections
+      indicate a significant increase in the coming decades.<br />
+      </p>
+      <p>
+      In 1951-60, the life expectancy for males was 42 years, which steadily
+      rose to 58 years in 1986-90. Projections estimate it to be 67 years in
+      2011-16, indicating a notable increase over the years. For females, the
+      increase has been even higher, rising from 58 years in 1986-90 to 69 years
+      in 2011-16.<br /></p>
+      <p>
+      The population of persons aged 60 and above has witnessed a significant
+      rise, from 12 million in 1901 to 57 million in 1991. Projections by
+      various organizations indicate that this trend will continue, with an
+      expected 198 million persons aged 60+ in 2030 and 326 million in 2050. The
+      percentage of persons aged 60+ in the total population has also shown a
+      steady rise, from 5.1 percent in 1901 to an expected 8.9 percent in
+      2016.<br /></p>
+      <p>
+      With a large demographic base, the growth rate implies a substantial
+      increase in the number of older individuals. The next decade, 2001-11, is
+      expected to witness a significant increase of 25 million persons aged 60+,
+      equivalent to the total population of this age group in 1961. Over the
+      twenty-five-year period from 1991 to 2016, there will be an increase of
+      55.4 million persons aged 60+, nearly doubling the population in this age
+      group.<br /></p>
+      <p>
+      In 1991, a significant proportion (63 percent) of the older population
+      fell within the age group of 60-69 years, often referred to as the 'young
+      old.' Additionally, 11 percent were in the age group of 80 years and
+      above, categorized as the 'older old' or 'very old.' This distribution is
+      expected to remain similar in 2016, with approximately 69 million in the
+      60-69 age group and 11 million in the 80+ age group. These statistics
+      indicate a substantial proportion of the older population being in
+      reasonably good physical and mental health, capable of leading an active
+      life.<br /></p>
+      <p>
+      In terms of gender distribution among older adults, men outnumber women, a
+      trend expected to continue in the coming years. Widowhood is more
+      prevalent among females aged 60 and above, primarily due to the custom of
+      women marrying older men and their longer life expectancy. In 1991, the
+      number of widowed females aged 60+ was significantly higher than that of
+      widowed males.<br /></p>
+      <p>
+      In summary, India is experiencing demographic aging, resulting in a larger
+      population of older individuals. Life expectancy has steadily increased,
+      leading to a greater proportion of the population being categorized as
+      'older old.' This demographic shift has implications for various aspects
+      of society and necessitates careful consideration and planning for the
+      well-being of older adults.<br /></p>
+    </p>
+</div>
+<div class="box">
+    <h2>Implications</h2>
+    <img src="implication.png" alt="Image" class="box-image2" />
+    <p>
+        The aging population in India has far-reaching implications at both macro and household levels. The substantial increase in numbers underscores the significant human reserve and emphasizes the necessity for extensive efforts to provide social services and other essential benefits.<br></p>
+
+        <p>This demographic transition has brought about societal and economic changes, yielding positive outcomes in some domains while raising concerns in others.<br></p>
+
+        <p>In the forthcoming decades, a notable portion of the population aged 60 and above will hail from middle and upper-income brackets. They will enjoy economic stability, possess higher educational and professional qualifications, lead active lives well into their 60s and early 70s, and maintain a positive outlook, seeking opportunities for a fulfilling and creative life.<br></p>
+
+        <p>However, there are worrisome aspects regarding the well-being of older individuals, and early signs of these concerns are already apparent. This has put pressure on and created strains within the living arrangements of older persons. While family bonds are strong in India, with a vast majority residing with or receiving support from their sons, various factors have made the situation precarious for a significant number of older individuals. They can no longer assume that their children will be capable of caring for them in their old age, particularly considering longer life expectancies that entail an extended period of dependency and increased costs to meet healthcare and other needs.<br></p>
+
+        <p>Factors such as industrialization, urbanization, education, and exposure to lifestyles in developed countries are altering values and behaviors. The higher costs associated with raising and educating children, coupled with the desire to fulfill their aspirations, can impact the allocation of income for parental care. Urbanization, limited living spaces, and high rents lead many migrants to leave their parents in their hometowns. Changing roles and expectations of women, alongside career ambitions and employment outside the home, result in reduced time available for caregiving. Additionally, the adoption of smaller family norms means fewer available caregivers, especially since daughters in many families are occupied with their education or careers. This situation is particularly challenging for single individuals, especially females, as few are willing to care for non-linear relatives. Widows, a majority of whom lack independent income sources and assets, face a vulnerable situation in old age.<br></p>
+</div>
+
+<div class="box">
+    <h2>The Mandate</h2>
+    <img src="mandate.jpg" alt="Image" class="box-image" />
+    <p>
+        The Constitution of India has established a mandate for the well-being of older individuals. Article 41, categorized as a Directive Principle of State Policy, emphasizes the State's obligation to ensure public assistance for the elderly within its economic means and development. Additionally, the Constitution enforces the right to equality as a Fundamental Right, extending its protection to older individuals. Social security has been designated as a joint responsibility of both the Central and State Governments.</p><br>
+
+        <p>In recent decades, significant discourse and deliberation have taken place concerning the impact of demographic transitions and societal and economic changes on the circumstances of older persons. The United Nations Principles for Older Persons, ratified by the United Nations General Assembly in 1991, along with subsequent proclamations and global targets on aging, are designed to encourage governments to formulate their own policies and initiatives in this domain.</p><br>
+
+        <p>For years, there has been a call for a definitive Policy Statement from the State addressing its senior citizens, aiming to provide clarity on their position within the national framework. This need has been vocalized in various forums focused on aging issues. The envisaged Statement, by elucidating policy principles, orientations, needs to be met, and delineating the roles of governmental and non-governmental entities, is anticipated to facilitate the delineation of distinct areas of operation and concerted efforts toward establishing a compassionate, age-integrated society.</p><br>
+        </div>
+        <div class="box">
+            <h2>The National Policy Statement </h2>
+            <img src="npf.png" alt="Image" class="box-image2" />
+            <p>
+                The National Policy Statement is an affirmation that the concerns of older individuals are of national importance, assuring them that they will not be neglected or marginalized. At its core, the policy strives for the well-being of older persons, aiming to reinforce their rightful position in society and enable them to embrace the later phase of their lives with purpose, dignity, and tranquility.</p><br>
+
+                <p>The policy envisions comprehensive support from the State, encompassing financial security, healthcare, housing, welfare, and other essential needs for older individuals. It emphasizes protection against abuse and exploitation, the provision of opportunities for their development, active engagement, and services to enhance the quality of their lives. The foundation of the policy rests on several fundamental principles.</p><br>
+
+                <p>Affirmative action in favor of the elderly is a key tenet of the policy, ensuring the protection of their rights and their fair participation in development benefits. Various sectors, programs, and administrative actions will demonstrate consideration for older individuals residing in rural areas. Particularly, focused attention will be directed towards older women to prevent them from falling victim to triple neglect and discrimination based on gender, widowhood, and age.</p><br>
+
+                <p>The policy perceives life as a continuum, acknowledging the post-60 phase as an integral part of the life cycle. It doesn't designate age 60 as a cutoff for beginning a life of dependency; rather, it regards this phase as an opportunity for individuals to lead an active, creative, and satisfying life. The policy advocates for the active and productive involvement of older persons rather than just focusing on their care.</p><br>
+
+                <p>The policy values an age-integrated society, aiming to strengthen intergenerational integration and connections. It envisions the development of a social support system, both formal and informal, to bolster families' capacity to care for older individuals and enable them to remain within their families.</p><br>
+
+                <p>Furthermore, the policy acknowledges that older persons are a valuable resource, contributing significantly to families and society at large. It stresses the need to provide opportunities and facilities for them to continue making meaningful contributions.</p><br>
+
+                <p>Empowerment of older individuals is a core belief of the policy, striving to provide them with better control over their lives and involve them in decision-making processes that impact them and the broader development. Recognizing their significant electoral representation, efforts will be made to involve them more extensively in the decision-making process.</p><br>
+
+                <p>While acknowledging the necessity for increased budgetary allocations from the State, with special attention to the rural and urban poor, the policy underscores the importance of collective action. Individuals, families, communities, and civil society institutions are seen as vital partners in achieving the objectives of the National Policy.</p><br>
+
+                <p>Lastly, the policy emphasizes the expansion of social and community services for older persons, especially women, enhancing their accessibility and removing socio-cultural, economic, and physical barriers. Special attention will be devoted to ensuring adequate coverage in rural areas, where a significant majority of the older population resides.</p><br>
+                </div>
+                <div class="box">
+                    <h2>Financial Security </h2>
+                    <img src="finance.png" alt="Image" class="box-image" />
+                    <p>
+                        The paramount concern during old age often revolves around financial insecurity. Considering that approximately one-third of the population (1993-94) falls below the poverty line and another third is in the lower-income group, the financial stability of two-thirds of the population aged 60 and above is precarious. Ensuring a certain level of income security for older persons is a high-priority goal. Policy instruments will be devised to encompass various income segments.</p><br>
+
+                        <p>For elderly individuals below the poverty line, old age pensions offer some relief. The coverage of the old age pension scheme for impoverished individuals will be significantly expanded, ultimately aiming to encompass all older persons below the poverty line. Measures will be taken to prevent delays and abuses in the selection and disbursement processes. The monthly pension rate will be revised periodically to mitigate the impact of inflation on its purchasing power. Simultaneously, the public distribution system will be extended to cover all individuals aged 60 and above living below the poverty line.</p><br>
+
+                        <p>Employees of government, quasi-government bodies, and industrial workers aspire to better returns from their provident fund accumulations through prudent and secure investments. The relevant issues will be carefully considered. Efforts will be made to ensure prompt settlement of pensions, provident funds, gratuities, and other retirement benefits, preventing hardship due to administrative lapses. Accountability for delays will be established, and redressal mechanisms will be put in place to ensure prompt, fair, and compassionate treatment, with special consideration for widows.</p><br>
+
+                        <p>Pension is a highly sought-after income security scheme, and its coverage base needs substantial expansion. Facilitating the establishment of pension schemes in both the private and public sectors for self-employed and salaried individuals in non-governmental employment is deemed necessary, with provisions for employer contributions. Key considerations for pension schemes include total security, flexibility, liquidity, and maximizing returns. Pension funds will operate under the supervision of a robust regulatory authority defining investment norms and providing strong safeguards.</p><br>
+
+                        <p>Taxation policies will demonstrate sensitivity to the financial challenges faced by older individuals, exacerbated by high costs of medical and nursing care, transportation, and necessary support services at home. Organizations of senior citizens advocate for higher standard deductions and annual rebates for medical treatment. Demands for tax relief for co-residing sons or daughters and medical expenses will be considered, among other proposals.</p><br>
+
+                        <p>Long-term savings instruments will be promoted to reach both rural and urban areas, ensuring contributors feel assured that payments at the end of the stipulated period sufficiently account for the likely erosion in purchasing power. Initiatives will motivate earners to save during their active working years to secure financial stability in old age.</p><br>
+
+                        <p>Pre-retirement counseling programs will be encouraged and supported. Employment in income-generating activities post-superannuation will be an individual's choice, with assistance provided to organizations offering career guidance, training, orientation, and support services. Programs by non-governmental organizations generating income for older individuals will be fostered. Age-related discrimination concerning credit, marketing, and other facilities will be eliminated. Measures will be implemented to protect the interests of older workers in sectors potentially adversely affected by structural adjustments.</p><br>
+
+                        <p>The right of parents without means to be supported by their children with sufficient means is recognized by the Criminal Procedure Code and the Hindu Adoptions and Maintenance Act, 1956. Legislation, such as the Himachal Pradesh Maintenance of Parents and Dependents Bill, 1996, aims to simplify procedures, provide timely relief, establish machinery for processing cases, and comprehensively define rights and circumstances. States will be encouraged to enact similar legislation, ensuring that elderly parents unable to sustain themselves do not endure abandonment and acute neglect.</p><br>
+                        <div class="see-more">
+                            <a href="https://savvywomen.tomorrowmakers.com/wise/10-important-government-schemes-senior-citizens-india-2022-article">See more..</a>
+                        </div>
+                </div>          
+                <footer>
+                    <div class="footer-container">
+                      <div class="footer-column">
+                        <h3 class="heading">Main Menu</h3>
+                        <ul class="footer-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="">Population Status Of Older Adults</a></li>
+                            <li class="dropdown">
+                              <a href="#" class="dropbtn">Health ▼</a>
+                              <div class="dropdown-content">
+                                <a href="diet.html">Diet</a>
+                                <a href="exercise.html">Exercise</a>
+                                <a href="mentalhealth.html">Mental Health</a>
+                              </div>
+                            </li>
+                            <li><a href="lawsandsenior.html">Law And Senior Citizen</a></li>
+                            <li><a href="">Schemes</a></li>
+                            <li><a href="">Healthy Ageing</a></li>
+                          <!-- Add more main menu links as needed -->
+                        </ul>
+                      </div>
+                      <div class="footer-column">
+                        <h3 class="heading">Quick Links</h3>
+                        <ul class="footer-nav">
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Support</a></li>
+                          <!-- Add more quick links as needed -->
+                        </ul>
+                      </div>
+                      <div class="footer-column">
+                        <h3 class="heading">Useful Links</h3>
+                        <ul class="footer-nav">
+                          <li><a href="#">Privacy Policy</a></li>
+                          <li><a href="#">Terms of Service</a></li>
+                          <li><a href="#">Accessibility</a></li>
+                          <!-- Add more useful links as needed -->
+                        </ul>
+                      </div>
+                    </div>
+                  </footer>
+                  
+              </body>
+            </html>
+            
+  </body>
+</html>

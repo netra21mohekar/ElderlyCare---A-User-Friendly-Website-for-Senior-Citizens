@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Old Age Videos</title>
+  <script src="https://www.google.com/jsapi"></script>
+  <script>
+    function loadYoutubeAPI() {
+      gapi.client.setApiKey('YOUR_API_KEY');
+      gapi.client.load('youtube', 'v3', onYouTubeApiLoad);
+    }
+
+    function onYouTubeApiLoad() {
+      // Fetch a playlist of videos
+      var request = gapi.client.youtube.playlistItems.list({
+        part: 'snippet',
+        playlistId: 'YOUR_PLAYLIST_ID', // Replace with your playlist ID
+        maxResults: 10
+      });
+
+      request.execute(function(response) {
+        var videos = response.items;
+        if (videos) {
+          for (var i = 0; i < videos.length; i++) {
+            var videoId = videos[i].snippet.resourceId.videoId;
+            // Display the video using the videoId
+            // You can create a player or link to the video
+            // Example: <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+          }
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+  <h1>Old Age Videos</h1>
+  <div id="video-container"></div>
+
+  <script src="https://www.google.com/jsapi"></script>
+<script>
+  function loadYoutubeAPI() {
+    gapi.client.setApiKey('YOUR_API_KEY');
+    gapi.client.load('youtube', 'v3', onYouTubeApiLoad);
+  }
+  
+  function onYouTubeApiLoad() {
+    // API is ready, you can now make API calls
+  }
+</script>
+<script src="https://apis.google.com/js/client.js?onload=loadYoutubeAPI"></script>
+
+</body>
+</html>

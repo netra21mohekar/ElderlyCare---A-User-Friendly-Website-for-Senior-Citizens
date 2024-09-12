@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f0f0f0 url('background-pattern.png') repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Arrange elements in a column */
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* Adjust the width of the boxes section */
+}
+
+.box {
+    background-color: #fff;
+    padding: 30px; /* Adjust padding */
+    border-radius: 10px;
+    width: 48%; /* Adjust the width of each box */
+    height: 400px; /* Adjust height */
+    box-sizing: border-box;
+    margin: 0 10px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.box h2 {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #007BFF, #00BFFF);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(to right, #0056b3, #007BFF);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+ul li button {
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul li button:hover {
+  background-color: #ff0000;
+}
+
+.time {
+  color: #888;
+}
+
+/* Adding animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+</style>
+<body>
+  <div class="container">
+    <h1 class="heading">What Will You Accomplish Today?</h1>
+    <h5 class="heading">Today's Reminder</h5>
+    <div class="boxes">
+      <div class="box">
+        <h2>Enter Your To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button onclick="addTask()">Add Task</button>
+      </div>
+      <div class="box">
+        <h2>Your To-Do List</h2>
+        <ul id="taskList"></ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    function addTask() {
+      const taskInput = document.getElementById('taskInput');
+      const taskText = taskInput.value.trim();
+
+      if (taskText !== '') {
+        const taskList = document.getElementById('taskList');
+        const li = document.createElement('li');
+        const currentTime = new Date().toLocaleTimeString();
+        li.innerHTML = `
+          ${taskText} - <span class="time">${currentTime}</span>
+          <button onclick="removeTask(this)">Remove</button>
+        `;
+        taskList.appendChild(li);
+        li.classList.add('fadeIn');
+        taskInput.value = '';
+      }
+    }
+
+    function removeTask(button) {
+      const taskList = document.getElementById('taskList');
+      taskList.removeChild(button.parentElement);
+    }
+  </script>
+</body>
+</html>

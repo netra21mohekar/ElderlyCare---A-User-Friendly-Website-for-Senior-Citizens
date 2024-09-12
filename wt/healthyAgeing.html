@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="footer.css" />
+    <style>
+
+.youtube1 {
+    position: relative;
+    text-align: center;
+  }
+  
+  .youtube1 h1 {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff; /* Change text color to black */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text */
+  padding: 10px 20px; /* Add padding to create the box */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+
+/* Container for the content */
+.box {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+/* Style for the text */
+.box p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Add a subtle border around the box */
+.box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+/* Heading style */
+.box h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .box {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+/* Add more space after each paragraph */
+.box p {
+  margin-bottom: 20px;
+}
+/* Add more space after each paragraph */
+.box p {
+  margin-bottom: 10px;
+}
+
+/* Style for the image inside the box */
+.box-image {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add margin to separate image from text */
+  max-width: 40%; /* Set a maximum width for the image */
+  max-height: 40%px; /* Set a maximum height for the image */
+}
+.box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box .box-image2 {
+    max-width: 100%; /* Adjust the image size */
+    float: right; /* Position the image on the right */
+    margin-left: 20px; /* Add some margin for spacing */
+    
+}
+.box-image {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add margin to separate image from text */
+  max-width: 40%; /* Set a maximum width for the image */
+  max-height: 40%px; /* Set a maximum height for the image */
+}
+.box .box-image2 {
+    max-width: 40%; /* Adjust the image size */
+    float: right; /* Position the image on the right */
+    margin-left: 20px; /* Add some margin for spacing */
+    
+}
+.box-image {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Add margin to separate image from text */
+  max-width: 40%; /* Set a maximum width for the image */
+  max-height: 40%px; /* Set a maximum height for the image */
+}
+.highlight {
+  color: red; /* or any other color */
+  font-weight: bold;
+}
+
+    </style>
+     </style>
+    </head>
+    <body>
+      <div class="header1">
+        <nav class="sticky">
+          <a href="" id="logo"><h2>JoyfulAging</h2></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fas fa-window-close" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="">Population Status Of Older Adults</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Health ▼</a>
+                <div class="dropdown-content">
+                  <a href="diet.html">Diet</a>
+                  <a href="exercise.html">Exercise</a>
+                  <a href="mentalhealth.html">Mental Health</a>
+                </div>
+              </li>
+  
+              <li><a href="">Law And Senior Citizen</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Schemes ▼</a>
+                <div class="dropdown-content">
+                  <a href="nationlpolicy.html">National Policy of Elder Person</a>
+                  <a href="nationalassistance.html">National Social Assistant Programme</a>
+                  <a href="rebates.html">Rebates</a>
+                  <a href="">NGO's and Voluntury Organizations</a>
+                </div>
+              <li><a href="healthyAgeing.html">Healthy Ageing</a></li>
+              <li><a href="oldAgeVideos.html">Old Age Videos</a></li>
+              <div id="button">
+                <li><a href="loginPage.php">Login</a></li>
+              </div>
+            </ul>
+          </div>
+          <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+      </div>
+  
+      <section class="youtube1">
+        <h1>Healthy Aging</h1>
+        <img src="healthyAgeing.png" alt="" class="oldimage" />
+      </section>
+  
+      <div class="box">
+        <img src="healthyaging1.png" alt="Image" class="box-image" />
+        <div class="box-text">
+          <h1>Embracing the Journey og Graceful Aging</h1>
+          <p>
+            Aging is a natural and beautiful journey marked by wisdom, experiences, and personal growth. It's about embracing each passing year with grace and vitality. Here are some perspectives on healthy aging that celebrate the essence of this journey:
+          </p>
+          <h4>Wisdom and Knowledge:</h4>
+          <p>
+            Aging is an accumulation of wisdom. It's about gaining insights from life's lessons, learning from mistakes, and applying that knowledge to make wiser decisions. Healthy aging is an opportunity to share this wisdom with others, leaving a lasting legacy.
+          </p>
+          <h4>Rediscovering Passion:</h4>
+          <p>
+            As we age, we often find the freedom and time to rediscover our passions. Whether it's painting, writing, gardening, or traveling, healthy aging allows us to pursue what ignites our soul and brings us joy.
+          </p>
+          <h4>Gratitude and Mindfulness:</h4>
+          <p>
+            Healthy aging encourages us to be present in the moment and practice gratitude for the life we've lived and the experiences we've had. Gratitude enhances well-being and allows us to find contentment in the simple pleasures of life.
+          </p>
+          <h4>Adaptability and Resilience:</h4>
+          <p>
+            Aging teaches us to adapt to changing circumstances, be it in health, relationships, or life situations. Healthy aging is about resilience, bouncing back from challenges, and finding strength in adversity.
+          </p>
+          <h4>Connection with Nature:</h4>
+          <p>
+            Aging often brings a deeper connection with nature. Whether it's a walk in the park, watching a sunset, or listening to the sound of waves, spending time in nature nurtures the soul and promotes well-being.
+          </p>
+          <h4>Legacy and Relationships:</h4>
+          <p>
+            Healthy aging involves cherishing our relationships and the impact we've made on others. It's leaving a positive imprint on the lives of our loved ones and the community, creating a legacy of love, kindness, and compassion.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="healthyaging2.png" alt="Image" class="box-image2" />
+        <div class="box-text">
+          <h1>Self-Care and Well-Being:</h1>
+          <p>
+            Healthy aging places a strong emphasis on self-care. It's about nurturing our physical, mental, and emotional health, prioritizing relaxation, and indulging in activities that bring us peace and happiness.
+          </p>
+          <h4>Life-Long Learning:</h4>
+          <p>
+            Aging is an opportunity to keep learning and growing. It's about staying intellectually curious, exploring new hobbies, and engaging in activities that stimulate the mind.
+          </p>
+          <h4>Living Authentically:</h4>
+          <p>
+            Healthy aging encourages us to live authentically, embracing who we are with acceptance and love. It's about being true to ourselves and finding fulfillment in living a life aligned with our values and beliefs.
+          </p>
+         
+          <p>
+            In essence, healthy aging is about approaching life's later years with a positive mindset, finding purpose and joy in everyday moments, and treasuring the beauty that comes with each passing day. It's a celebration of a life well-lived and an anticipation of the adventures that lie ahead.
+        </div>
+      </div>
+  
+      <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3 class="heading">Main Menu</h3>
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us </a></li>
+                <li><a href="">Population Status Of Older Adults</a></li>
+                <li>
+                    <a href="">Health</a>
+                </li>
+                <li><a href="lawsandsenior.html">Law And Senior Citizen</a></li>
+                
+                <li><a href="">Schemes</a></li>
+                <li><a href="">Healthy Ageing</a></li>
+                <li><a href="">Old Age Videos</a></li>
+  
+              <!-- Add more main menu links as needed -->
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="heading">Quick Links</h3>
+            <ul class="footer-nav">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Support</a></li>
+              <!-- Add more quick links as needed -->
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="heading">Useful Links</h3>
+            <ul class="footer-nav">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <!-- Add more useful links as needed -->
+            </ul>
+          </div>
+        </div>
+      </footer>
+      </body>
+      </html>
