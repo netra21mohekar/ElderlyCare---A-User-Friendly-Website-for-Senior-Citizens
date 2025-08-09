@@ -1,4 +1,5 @@
-### Build & Push Image
+## Build & Push Image
+
 ```bash
 docker build -t netranetra/elderlycare-web:latest .
 docker push netranetra/elderlycare-web:latest
@@ -14,19 +15,10 @@ Copy
 Edit
 kubectl get pods -n dev-elder-care
 kubectl get svc -n dev-elder-care
-pgsql
+kotlin
 Copy
 Edit
 
-That way GitHub will show them as nice code blocks instead of plain text with “bash” written twice.  
+If you replace your current section with this, the GitHub preview will look professional and clean.  
 
-Do you want me to rewrite your current README section so it’s perfectly formatted? That way it’ll look professional on GitHub.
-
-
-
-
-
-
-
-
-Ask ChatGPT
+Do you want me to reformat your **entire README** in this style so the whole thing is consistent?
